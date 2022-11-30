@@ -22,7 +22,7 @@ def main():
   file = open('strings_output_clean.txt', 'x')
   file.write(parsed_data)
  
-if __name__ == "__main__"
+if __name__ == "__main__":
   main()
 
       
