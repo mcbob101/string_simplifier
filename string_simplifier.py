@@ -27,3 +27,24 @@ if __name__ == "__main__":
 
       
         
+#done at work. Implement later
+
+special_chars = ["&","!","+"]
+lst = ["hs!hfk&n+db", "dh!d&v+su"]
+filtered = []
+answer = []
+temp = []
+for l in lst:
+    for c in l:
+        temp.append(c)
+    for index, i in enumerate(temp):
+        if i in special_chars:
+            temp.pop(index)
+    filtered.append(temp)
+    
+    temp = []
+for i in filtered:
+    f = ''.join(i)
+    answer.append(f)
+print(lst)
+print(answer)
